@@ -190,6 +190,12 @@ pub struct RequestError {
     pub charge: Option<String>,
 }
 
+impl RequestError {
+    pub fn charge_id(&self) -> Option<&str> {
+        self.charge.as_deref()
+    }
+}
+
 /// The structure of the json body when an error is included in
 /// the response from Stripe.
 #[derive(Deserialize)]
