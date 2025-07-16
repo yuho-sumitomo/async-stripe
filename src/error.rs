@@ -78,6 +78,7 @@ pub enum ErrorCode {
     AmountTooLarge,
     AmountTooSmall,
     ApiKeyExpired,
+    AuthenticationRequired,
     BalanceInsufficient,
     BankAccountExists,
     BankAccountUnusable,
